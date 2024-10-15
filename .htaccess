@@ -1,0 +1,6 @@
+Options All -Indexes 
+
+Options -MultiViews
+ReWriteEngine On
+ReWriteCond %{REQUEST_FILENAME} !-f
+ReWriteRule ^ index.php [QSA,l]
